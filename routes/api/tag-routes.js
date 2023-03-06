@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Tag, Product, ProductTag } = require('../../models');
+const {Tag, Product, ProductTag } = require('../../models');
 
 // The `/api/tags` endpoint
 
@@ -7,7 +7,8 @@ const { Tag, Product, ProductTag } = require('../../models');
 router.get('/', async (req, res) => {
   try {
     const tagData = await Tag.findAll({
-      include: [{model: Product, through: ProductTag, as: 'tag_products'}]
+      include: {all: true, nested:true}
+    //include: [{model: Product, through: ProductTag, as: 'tag_products'}] couldn't get to this syntax to work like in products
     });
     res.status(200).json(tagData)
   } catch (err) {
@@ -19,7 +20,8 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try{
     const tagData = await Tag.findByPk(req.params.id, {
-      include: [{model: Product, through: ProductTag, as: 'tag_products'}]
+      include: {all: true, nested:true}
+      //include: [{model: Product, through: ProductTag, as: 'tag_products'}]
     });
     res.status(200).json(tagData)
 }
@@ -34,7 +36,6 @@ router.post('/', async (req, res) => {
     const tagData = await Tag.create(req.body);
     res.status(200).json(tagData)
 } 
-
 catch (err) {
     res.status(400).json(err);
 }
@@ -52,7 +53,6 @@ router.put('/:id', async (req, res) => {
     if(!tagData) {
       res.status(400).json(`Tag ID ${req.params.id} could not be found!`)
     }
-
     res.status(200).json(`Tag ID ${req.params.id} has been updated`)
     
   } catch (err) {
