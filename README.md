@@ -17,7 +17,7 @@ This is a back end for an e-commerce website that uses the latest technologies s
 ## Visuals
 
 
-[Click here for Walkthrough Video](https://user-images.githubusercontent.com/118075347/222032071-a174818d-710b-48a3-8cb9-e76a0ef6768a.mp4)
+[Click here for Walkthrough Video](https://drive.google.com/file/d/120c2UjgSNiKDbmPuzKfZB07PhYqJB9px/view)
 
 
 ## Installation
