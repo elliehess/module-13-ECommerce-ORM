@@ -17,7 +17,9 @@ This is a back end for an e-commerce website that uses the latest technologies s
 ## Visuals
 
 
-[Click here for Walkthrough Video](https://drive.google.com/file/d/120c2UjgSNiKDbmPuzKfZB07PhYqJB9px/view)
+[Click here for Walkthrough Video](https://user-images.githubusercontent.com/118075347/223225148-6366cdc5-3834-4519-b4b0-710bff0c844c.mp4)
+
+
 
 
 ## Installation
@@ -45,7 +47,8 @@ Then, the application will be invoked by using one of the following commands:
 1.) node server.js
 2.) npm start 
 
-## Usage
+## Usage [![My Skills](https://skillicons.dev/icons?i=sequelize)](https://skillicons.dev)
+
 
 Using a functional Express.js API, you may add your database name, MySQL username, and MySQL password to an environment variable file and then will be able to connect to a database using Sequelize. After entering schema and seed commands, then a development database is created and is seeded with test data. When you enter the command to invoke the application, your server is started and the Sequelize models are synced to the MySQL database.
 Using Insomnia Core, you can open API GET routes for categories, products or tags and the data for each of these routes is displayed in a formatted JSON. You are able to test API POST, PUT, and DELETE routes in Insomnia Core
