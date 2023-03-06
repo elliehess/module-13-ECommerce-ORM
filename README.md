@@ -1,5 +1,4 @@
-[![My Skills](https://skillicons.dev/icons?i=sequelize)](https://skillicons.dev)
-# Module 13 - E-Commerce / ORM 
+[![My Skills](https://skillicons.dev/icons?i=sequelize)](https://skillicons.dev) # Module 13 - E-Commerce / ORM 
 
 ## Description
 
